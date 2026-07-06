@@ -1,4 +1,4 @@
-Đã tạo bộ notebook Q1 mới tại:
+﻿Đã tạo bộ notebook Q1 mới tại:
 
 [ViMedPET_Q1_Kaggle_Notebooks](C:\Users\ADMIN\Downloads\DSP391m\ViMedPET_Q1_Kaggle_Notebooks)
 
@@ -28,7 +28,7 @@ Raw inputs bạn đưa đã được đưa vào notebook 00/01:
 ```text
 /kaggle/input/datasets/tundng111/vimed-pet-ct-part1-raw-no-autoextract-v3
 /kaggle/input/datasets/tundng111/vimed-pet-ct-part2-raw-no-autoextract-v1
-/kaggle/input/datasets/hannhu4002/vimed-pet-part-3-archive
+/kaggle/input/datasets/tundng111/vimed-pet-ct-part3-raw-no-autoextract-v1
 ```
 
 Notebook cũng tự search `/kaggle/input` nếu Kaggle mount bằng slug khác.
@@ -37,14 +37,14 @@ Notebook cũng tự search `/kaggle/input` nếu Kaggle mount bằng slug khác.
 1. Chạy `00`, Save Version.
 2. Notebook `01` attach output của `00` + raw 3 part, chạy cache, Save Version.
 3. Từ `02` trở đi không attach raw nữa, chỉ attach output cache/checkpoint.
-4. `03` mặc định `SMOKE_MODE=True`; chạy smoke trước. Khi ổn, đổi `SMOKE_MODE=False`.
+4. `03` bản mới mặc định chạy `RUN_MODE="full"` để train QLoRA đầy đủ trên T4 x2; nếu chỉ muốn test nhanh, sửa `RUN_MODE="smoke"` trong notebook.
 5. Nếu Kaggle không có internet, add Qwen model làm Kaggle input hoặc set `QWEN_MODEL_PATH`.
 
 **Gate Tối Thiểu**
 - `00`: patient overlap = `0`, val/test đủ CT/PET/report.
 - `01`: val/test cache `100%`.
 - `02`: Recall@5 `>= 0.20`, MRR `>= 0.08`, retrieved ROUGE-L `>= 0.18`.
-- `03`: smoke chạy không lỗi, checkpoint lưu được.
+- `03`: full run phải có `adapter_final`, `training_summary.json`, `trainer_log_history.csv`, và `validation_generation_samples.csv`; loss phải giảm ổn định và không OOM.
 - `04`: Q1 tối thiểu nên hướng tới ROUGE-L `>= 0.30`, BLEU-4 `>= 0.08`, clinical keyword F1 `>= 0.30`, SUV consistency `>= 0.60`.
 - `05`: val loss giảm ổn định, không OOM; 3D nên cải thiện clinical/SUV so với 2.5D.
 - `06`: có bảng ablation cuối cùng.
@@ -52,3 +52,4 @@ Notebook cũng tự search `/kaggle/input` nếu Kaggle mount bằng slug khác.
 Repo ViPET-ReportGen có ích, nhất là cấu trúc stage: finetune vision encoder, VLM train/inference, clinical evaluation. Tôi đã đưa hướng đó vào pipeline nhưng chỉnh lại cho thực tế T4: cache 2.5D trước, retrieval baseline trước, Qwen LoRA sau, 3D dual-stream là stage riêng. Không nên claim “bằng hoặc hơn paper” nếu chưa cùng split/metric/compute; paper dùng pipeline lớn hơn và clinical metric riêng.
 
 Nguồn đối chiếu: [ViPET-ReportGen GitHub](https://github.com/AIoT-Lab-AI4LIFE/ViPET-ReportGen).
+
