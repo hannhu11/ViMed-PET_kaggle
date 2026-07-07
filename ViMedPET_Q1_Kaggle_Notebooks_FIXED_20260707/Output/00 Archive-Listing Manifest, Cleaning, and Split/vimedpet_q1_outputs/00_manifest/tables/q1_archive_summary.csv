@@ -1,0 +1,7 @@
+﻿source_part,dataset_part,archive_files_listed,ct_entries,pet_entries,json_entries,cases_from_ct,crc_test_status
+PETCT_2017,Part 1,645,215,215,215,215,not_run
+PETCT_2018,Part 1,1386,462,462,462,462,not_run
+PETCT_2019,Part 1,1017,339,339,339,339,not_run
+PETCT_2023_1,Part 2,1506,502,502,502,502,not_run
+PETCT_2023_2,Part 2,2286,762,762,762,762,not_run
+PETCT_2023_3,Part 3,1431,477,477,477,477,not_run

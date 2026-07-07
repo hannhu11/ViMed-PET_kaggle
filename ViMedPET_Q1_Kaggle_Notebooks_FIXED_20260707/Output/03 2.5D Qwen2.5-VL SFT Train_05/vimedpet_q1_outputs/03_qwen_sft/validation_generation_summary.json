@@ -1,0 +1,12 @@
+{
+  "rouge_l": 0.43100757193007144,
+  "has_findings_heading": 1.0,
+  "has_impression_heading": 0.0,
+  "prediction_word_count": 158.95833333333334,
+  "target_word_count": 362.5833333333333,
+  "unique_prediction_ratio": 1.0,
+  "top_prediction_fraction": 0.020833333333333332,
+  "exact_match_count": 0,
+  "sample_count": 48,
+  "collapse_warning": false
+}

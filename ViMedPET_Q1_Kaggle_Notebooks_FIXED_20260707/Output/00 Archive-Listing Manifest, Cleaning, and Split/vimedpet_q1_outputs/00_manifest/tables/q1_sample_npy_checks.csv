@@ -1,0 +1,7 @@
+﻿source_part,case_id,ct_path,pet_path,ct_shape,pet_shape,ct_dtype,pet_dtype,sample_npy_read_ok,sample_error
+PETCT_2017,d9a0e3ad6857,PETCT_2017/THANG 8/CT/day_1_patient_0.npy,PETCT_2017/THANG 8/PET/day_1_patient_0.npy,"(313, 512, 512)","(313, 256, 256)",int16,int16,True,
+PETCT_2018,595b18e31d0b,PETCT_2018/THANG 1/CT/day_10_patient_5.npy,PETCT_2018/THANG 1/PET/day_10_patient_5.npy,"(275, 512, 512)","(275, 256, 256)",int16,int16,True,
+PETCT_2019,a2a091c291b6,PETCT_2019/THANG 10/CT/day_08_patient_142.npy,PETCT_2019/THANG 10/PET/day_08_patient_142.npy,"(299, 512, 512)","(299, 256, 256)",int16,int16,True,
+PETCT_2023_1,9ed0e48447f5,PETCT_2023_1/THANG 1/CT/day_11_patient_0.npy,PETCT_2023_1/THANG 1/PET/day_11_patient_0.npy,"(299, 512, 512)","(299, 256, 256)",int16,int16,True,
+PETCT_2023_2,23c0e730fea3,PETCT_2023_2/THANG 9/CT/day_12_patient_1036.npy,PETCT_2023_2/THANG 9/PET/day_12_patient_1036.npy,"(313, 512, 512)","(313, 256, 256)",int16,int16,True,
+PETCT_2023_3,383af08043bf,PETCT_2023_3/THANG 10/CT/day_10_patient_1246.npy,PETCT_2023_3/THANG 10/PET/day_10_patient_1246.npy,"(237, 512, 512)","(237, 256, 256)",int16,int16,True,

@@ -1,0 +1,33 @@
+{
+  "run_mode": "full",
+  "model_id_or_path": "Qwen/Qwen2.5-VL-3B-Instruct",
+  "duplicate_target_cap": 8,
+  "train_all_rows": 1931,
+  "train_rows_after_duplicate_cap": 1931,
+  "train_unique_targets": 1929,
+  "train_top_target_count_after_cap": 3,
+  "validation_rows_used_for_loss": 160,
+  "rows": 2757,
+  "findings_present": 2756,
+  "impression_present": 2730,
+  "target_has_impression": 2730,
+  "impression_coverage": 0.9902067464635473,
+  "global_step": 726,
+  "train_metrics": {
+    "train_runtime": 17860.3143,
+    "train_samples_per_second": 0.324,
+    "train_steps_per_second": 0.041,
+    "total_flos": 8.896673054376346e+16,
+    "train_loss": 0.3706998803727226,
+    "epoch": 3.0
+  },
+  "last_log": {
+    "train_runtime": 17860.3143,
+    "train_samples_per_second": 0.324,
+    "train_steps_per_second": 0.041,
+    "total_flos": 8.896673054376346e+16,
+    "train_loss": 0.3706998803727226,
+    "epoch": 3.0,
+    "step": 726
+  }
+}

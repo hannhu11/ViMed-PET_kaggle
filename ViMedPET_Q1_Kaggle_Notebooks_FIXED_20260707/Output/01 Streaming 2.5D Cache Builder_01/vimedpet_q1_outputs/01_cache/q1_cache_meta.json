@@ -1,0 +1,11 @@
+{
+  "image_size": 224,
+  "channels": 6,
+  "n": 2757,
+  "mmap_path": "q1_25d_uint8_224.memmap",
+  "source_manifest": "/kaggle/input/notebooks/hannhu4002/00-archive-listing-manifest-cleaning-and-split/vimedpet_q1_outputs/00_manifest/q1_clean_manifest.csv",
+  "cache_case_limit": null,
+  "cache_only_splits": null,
+  "batch_cases_per_extract": 6,
+  "target_column": "model_target_text"
+}
