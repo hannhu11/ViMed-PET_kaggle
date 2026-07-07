@@ -1,0 +1,5 @@
+﻿source_year,expected_cases,computed_cases,status
+PETCT_2017,215,215,OK
+PETCT_2018,462,462,OK
+PETCT_2019,339,339,OK
+PETCT_2023,1741,1741,OK

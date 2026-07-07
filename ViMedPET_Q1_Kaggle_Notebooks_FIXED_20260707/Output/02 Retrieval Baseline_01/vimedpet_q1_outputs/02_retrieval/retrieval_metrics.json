@@ -1,0 +1,13 @@
+{
+  "validation_closed_recall@1": 0.007263922518159807,
+  "validation_closed_recall@5": 0.024213075060532687,
+  "validation_closed_mrr": 0.02605104065675418,
+  "test_closed_recall@1": 0.007263922518159807,
+  "test_closed_recall@5": 0.01694915254237288,
+  "test_closed_mrr": 0.023940081778903253,
+  "retrieved_rouge_l": 0.6770462462559678,
+  "retrieved_bleu4": 0.5757890881337613,
+  "retrieved_keyword_f1": 0.9490111239009037,
+  "retrieved_suv_acc_0_5": 0.1591077674007456,
+  "retrieved_section_valid": 1.0
+}

@@ -1,0 +1,41 @@
+{
+  "all_cases": 2757,
+  "clean_cases": 2757,
+  "bad_records": 0,
+  "expected_total_cases": 2757,
+  "matches_expected_total": true,
+  "clean_matches_expected_total": true,
+  "unique_patients": 2727,
+  "split_counts": {
+    "train": 1931,
+    "validation": 413,
+    "test": 413
+  },
+  "patient_overlap": {
+    "train_validation": 0,
+    "train_test": 0,
+    "validation_test": 0
+  },
+  "source_counts": {
+    "PETCT_2023_2": 762,
+    "PETCT_2023_1": 502,
+    "PETCT_2023_3": 477,
+    "PETCT_2018": 462,
+    "PETCT_2019": 339,
+    "PETCT_2017": 215
+  },
+  "year_counts": {
+    "PETCT_2023": 1741,
+    "PETCT_2018": 462,
+    "PETCT_2019": 339,
+    "PETCT_2017": 215
+  },
+  "mean_report_words": 373.9376133478419,
+  "median_report_words": 373.0,
+  "findings_present": 2756,
+  "impression_present": 2730,
+  "impression_coverage": 0.9902067464635473,
+  "array_check_method": "archive inventory for all CT/PET files plus sampled np.load checks",
+  "sample_npy_checks": 6,
+  "sample_npy_read_failures": 0
+}

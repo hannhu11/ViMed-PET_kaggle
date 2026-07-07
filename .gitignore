@@ -1,0 +1,5 @@
+*.safetensors
+*.pt
+*.memmap
+*.zip
+*.bin
